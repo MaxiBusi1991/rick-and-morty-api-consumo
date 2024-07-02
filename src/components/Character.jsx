@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Character({character}) {
 
@@ -6,7 +7,11 @@ function Character({character}) {
         <img src={character.image} className="card-img-top rounded-pill" alt={character.name}/>
         <div className="card-body">
           <h5 className="card-title">{character.name}</h5>
-          <p className="card-text">{character.origin.name}</p>   
+          <p className="card-text">{character.origin.name}</p> 
+          <Link 
+            to={'/detailCharacter'}
+            class="btn btn-info btn-sm fw-bolder text-secondary-emphasis">
+              Info..</Link>  
         </div>
       </div>
   )
