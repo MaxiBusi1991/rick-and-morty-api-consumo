@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/maxibusi1991.github.io/' element={<HomePage/>}/>
+        <Route path='/' element={<HomePage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
         <Route path='/detailCharacter/:id' element={<DetailCharacter/>} />
       </Routes>
